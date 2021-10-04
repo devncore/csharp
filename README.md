@@ -1,6 +1,8 @@
 <div align=center>
   <h2>Csharp</h2>
-  <br/>
+  
+  <br />
+  <br />
  
   이 레포지토리는 DevNcore팀이 관리하고 있습니다.
   <br />
@@ -23,9 +25,22 @@
 <br />
 
 ## 소개
-이 레포지토리는 C#에서 다루는 다양한 문법과 이를 다루는 방법에 대해 설명하고 있습니다.
+C#에서의 다양한 문법과 이를 다루는 방법에 대해 설명하고 있습니다.  
+
 > 정해진 주제, 순서, 두서없이 작성. 지속적으로 업데이트할 것입니다.
 
+C#은 닷넷을 포함한 다양한 환경에서 사용되는 언어입니다.
+- WPF
+- Winform
+- Xamarin
+- .NET Core 
+- MAUI
+- WinUI 3
+- Unity
+- ASP.NET MVC
+- Blazor
+- Entity
+- 
 <br />
 
 ## Generic
