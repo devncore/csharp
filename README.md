@@ -23,6 +23,8 @@ C# 문법, 메서드, WPF, Unity, Blazor, Entity등 다양한 내용을 정리�
 ## Contents
 - [Generic](#Generic)
 
+<br />
+
 ## Generic
 데이터 형식을 일반화한 메서드입니다.    
 일반 메서드 선언과 비슷하지만 일반화할 형식이 들어갈 자리에 형식 매개 변수가 들어갑니다.    
