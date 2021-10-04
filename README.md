@@ -16,12 +16,15 @@
  </p>
 </div>
 
-## _Csharp_
+## Contents
+- [소개](#소개)
+- [Generic](#Generic)
+
+<br />
+
+## 소개
 C# 문법, 메서드, WPF, Unity, Blazor, Entity등 다양한 내용을 정리할 레포지토리 입니다.    
 정해진 주제, 순서, 두서없이 작성. 지속적으로 업데이트할 것입니다.
-
-## Contents
-- [Generic](#Generic)
 
 <br />
 
