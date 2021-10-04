@@ -61,7 +61,51 @@ C# 문법, 메서드, WPF, Unity, Blazor, Entity등 다양한 내용을 정리�
 
 ![image](https://user-images.githubusercontent.com/68521148/135848199-851e71c8-7ebc-4991-9375-08f52c760f11.png)
 
-
-
 > T는 타입 매개 변수입니다.    
-> 메서드를 호출할 때는 T 대신 타입을 넣으면 컴파일러는 메서드의 나머지 부분에 대해서도 T를 타입 매개 변수값으로 치환합니다.    
+> 메서드를 호출할 때는 T 대신 타입을 넣으면 컴파일러는 메서드의 나머지 부분에 대해서도 T를 타입 매개 변수값으로 치환합니다.
+
+***
+
+### GenericClass 예제
+
+```csharp
+  class Program
+    {
+        static void Main(string[] args)
+        {
+            MyStack<int> numberStack = new MyStack<int>();
+            MyStack<string> nameStack = new MyStack<string>();
+
+            numberStack.Push(100);
+            nameStack.Push("백");
+        }
+    }
+    class MyStack<T>
+    {
+        T[] _elements;
+        int pos = 0;
+
+        public MyStack()
+        {
+            _elements = new T[10];
+        }
+
+        public void Push(T element)
+        {
+            _elements[++pos] = element;
+            foreach(var item in _elements)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        public T Pop()
+        {
+            return _elements[pos--];
+        }
+    }
+```
+
+![image](https://user-images.githubusercontent.com/68521148/135850480-96792a80-79a5-49ba-914a-94d2b0a820e1.png)
+
+> 타입을 제외하면 소스코드는 동일하기 때문에  매개 변수를 이용해 제네릭 클래스로 구현할 수 있습니다.
