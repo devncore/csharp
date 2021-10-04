@@ -36,7 +36,7 @@
 - ASP.NET MVC
 - Blazor
 - Entity
-- 
+
 <br />
 
 ## Generic
