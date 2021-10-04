@@ -32,36 +32,36 @@ C# 문법, 메서드, WPF, Unity, Blazor, Entity등 다양한 내용을 정리�
 ### GenericMethod 예제
 
 ```csharp
- class Program
+class Program
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            int a = 1;
-            int b = 2;
+        int a = 1;
+        int b = 2;
 
-            string c = "일";
-            string d = "이";
+        string c = "일";
+        string d = "이";
 
-            Swap<int>(ref a, ref b);
-            Swap<string>(ref c, ref d);
+        Swap<int>(ref a, ref b);
+        Swap<string>(ref c, ref d);
 
-            Console.WriteLine(a + " " + b);
-            Console.WriteLine(c + " " + d);
-        }
-
-        static void Swap<T>(ref T lhs, ref T rhs)
-        {
-            T temp;
-            // temp 변수에 a(1), c(일) 값을 담아둠
-            temp = lhs;
-
-            // a,c 변수에 b,d값 대입
-            lhs = rhs;
-
-            // b,d 변수에 a,c값 대입
-            rhs = temp;
-        }
+        Console.WriteLine(a + " " + b);
+        Console.WriteLine(c + " " + d);
     }
+
+    static void Swap<T>(ref T lhs, ref T rhs)
+    {
+        T temp;
+        // temp 변수에 a(1), c(일) 값을 담아둠
+        temp = lhs;
+
+        // a,c 변수에 b,d값 대입
+        lhs = rhs;
+
+        // b,d 변수에 a,c값 대입
+        rhs = temp;
+    }
+}
 ```
 
 ![image](https://user-images.githubusercontent.com/68521148/135848199-851e71c8-7ebc-4991-9375-08f52c760f11.png)
@@ -74,41 +74,43 @@ C# 문법, 메서드, WPF, Unity, Blazor, Entity등 다양한 내용을 정리�
 ### GenericClass 예제
 
 ```csharp
-  class Program
+class Program
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            MyStack<int> numberStack = new MyStack<int>();
-            MyStack<string> nameStack = new MyStack<string>();
+        MyStack<int> numberStack = new MyStack<int>();
+        MyStack<string> nameStack = new MyStack<string>();
 
-            numberStack.Push(100);
-            nameStack.Push("백");
+        numberStack.Push(100);
+        nameStack.Push("백");
+    }
+}
+
+class MyStack<T>
+{
+    T[] _elements;
+    int pos = 0;
+
+    public MyStack()
+    {
+        _elements = new T[10];
+    }
+
+    public void Push(T element)
+    {
+        _elements[++pos] = element;
+        
+        foreach(var item in _elements)
+        {
+            Console.WriteLine(item);
         }
     }
-    class MyStack<T>
+
+    public T Pop()
     {
-        T[] _elements;
-        int pos = 0;
-
-        public MyStack()
-        {
-            _elements = new T[10];
-        }
-
-        public void Push(T element)
-        {
-            _elements[++pos] = element;
-            foreach(var item in _elements)
-            {
-                Console.WriteLine(item);
-            }
-        }
-
-        public T Pop()
-        {
-            return _elements[pos--];
-        }
+        return _elements[pos--];
     }
+}
 ```
 
 ![image](https://user-images.githubusercontent.com/68521148/135850480-96792a80-79a5-49ba-914a-94d2b0a820e1.png)
