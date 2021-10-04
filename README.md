@@ -61,5 +61,5 @@ C# 문법, 메서드, WPF, Unity, Blazor, Entity등 다양한 내용을 정리�
 
 ![image](https://user-images.githubusercontent.com/68521148/135847378-f6808a89-a0e0-4680-9932-d0fcd720a9a4.PNG)
 
-> <T>는 타입 매개 변수입니다.    
+> T는 타입 매개 변수입니다.    
 > 메서드를 호출할 때는 T 대신 타입을 넣으면 컴파일러는 메서드의 나머지 부분에 대해서도 T를 타입 매개 변수값으로 치환합니다.    
