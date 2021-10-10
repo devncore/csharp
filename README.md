@@ -18,6 +18,7 @@
 ## Contents
 - [소개](#소개)
 - [제네릭 (Generic)](#Generic)
+- [WPF Template](#WPF Template)
 
 <br />
 
@@ -129,3 +130,16 @@ class MyStack<T>
 ![image](https://user-images.githubusercontent.com/68521148/135850480-96792a80-79a5-49ba-914a-94d2b0a820e1.png)
 
 > 타입을 제외하면 소스코드는 동일하기 때문에  매개 변수를 이용해 제네릭 클래스로 구현할 수 있습니다.
+
+<br />
+
+## WPF Template
+Template이란 이름에서도 알 수 있듯이 "틀"의 역할을 해줍니다. Template은 WPF Control의 껍데기 같은 개념입니다.
+
+- **ControlTemplate**    
+컨트롤의 컨텐츠가 아닌 컨트롤의 외관을 꾸밀 때 사용합니다
+- **DataTemplate**    
+컨트롤의 컨텐츠 부분을 스타일링합니다.
+- **ItemsPanelTemplate**    
+ComboBox, ListBox 등의 같은 OOOitems들을 여러 개 갖는 컨트롤의 레이아웃을 표현합니다.(아이템 )
+
