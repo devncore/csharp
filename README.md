@@ -6,7 +6,6 @@
   <a href="https://github.com/devncore/devncore"><strong>더 알아보기 »</strong></a>
  
   <br />
-  <br />
  
   <p align="center">
    <a href="https://github.com/devncore/csharp/stargazers"><img src="https://img.shields.io/github/stars/devncore/csharp" alt="Github Stars"></a>
